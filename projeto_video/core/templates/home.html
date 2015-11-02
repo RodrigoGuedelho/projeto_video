@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Videos</title>
+	<link rel = "stylesheet " type=" text/css" href="{% static 'css/home.css'%}"/>
+</head>
+	 <meta charset="utf-8">
+<body>
+{% if user.is_authenticated %}
+	<div id='corpo' class="dropdown">
+		<div id="menu">
+			<a href = "#" class="botoes" >{{ user}}</a>
+			<a href = "#" class="botoes" >Arquivos</a>
+			<a href = "#" class="botoes" >Editar</a>
+			<a href = "#" class="botoes" >Home</a>
+			
+
+		    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+		      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sobre</a></li>
+		      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Painel</a></li>
+		      <li role="presentation" class="divider"></li>
+		      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sair</a></li>
+		    </ul>
+		  
+		</div>
+	{% block menu %}{% endblock %}
+{% else %}
+	<h1> Você não tem acesso a está pagina pois não está logado</h1>
+{% endif %}
+</body>
+</html>

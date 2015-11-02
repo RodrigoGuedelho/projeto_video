@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Videos</title>
+</head>
+	 <meta charset="utf-8">
+<body>
+	<div id="login">
+		
+		<form class="form-login" method="post">
+			{% csrf_token %}
+			<fieldset>
+				{{ form.non_field_errors}}
+				<h1>Login</h1>
+				{% for field in form %}
+				<table>
+					<ul>{{ field.label_tag}}</ul>
+					<ul>{{ field}}</ul>
+					<ul>{{ field.errors}}</ul>
+					</table>
+				{% endfor%}
+				<ul><button type="submit" class="butao_login">Entrar</button></ul>
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+
+
+}
+h1{
+	text-align: center;
+}
+#corpo{
+	width: 100%;
+	height: 100px;
+	
+
+}
+#menu{
+	
+	width: 100%;
+	height: 30px;
+	background: #3300cc;
+
+}
+#item_menu_nome{
+	width: 200;
+	height: 60px;
+	background: #3300cc;
+	margin: 5px auto;
+	border-color: black;
+	text-decoration:inherit;
+	border-radius: 2px;
+	position: relative;
+	left: 521px;
+}
+
+/*
+botoes : são referente aos botoes do menu 
+*/
+.botoes{
+	background:#3300cc; 
+	margin: 15px;
+	color: white;
+	border-color: black;
+	text-decoration:inherit;
+	padding: 4px 30px;
+	position:relative;
+	top: -14px;
+	float: right;
+
+
+
+	}
+	.botoes:hover{
+	background: #003399;
+	padding: 4px 30px;
+	
+	}
+	.botoes:active{
+		background: #6666cc;
+			}
